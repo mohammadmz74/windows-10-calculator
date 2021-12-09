@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    background-image: url(../image/1.jpg);
+    background-position: center;
+}
+.contain{
+    background-color: rgba(80, 80, 80, 0.5);
+    width: 37%;
+    height: 87vh;
+    margin: auto auto;
+    margin-top: 50px;
+    box-shadow: 3px 0 3px 0 rgba(3, 3, 3, 0.5);
+    border-radius: 5px;
+}
+.display input{
+    width: 99%;
+    height: 270px;
+    background-color: rgba(80, 80, 80, 0.5);
+    border: 1px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 40px;
+    text-align: right;
+    outline: transparent;
+    border-radius: 5px;
+}
+.math{
+    margin-left: 5px;
+    padding-top: 1px;
+}
+.math input{
+    width: 24%;
+    padding: 15px;
+    cursor: pointer;
+    background-color: rgba(58, 58, 58, 0.5);
+    color: rgba(255, 255, 255, 1);
+    border: 1px;
+    outline: transparent;
+    font-size: 16px;
+}
+#del{
+    font-size: 13px;
+}
+.math1{
+    margin-left: 5px;
+    padding-top: 1px;
+}
+.math1 input{
+    width: 24%;
+    padding: 15px;
+    cursor: pointer;
+    background-color: rgba(58, 58, 58, 0.5);
+    color: rgba(255, 255, 255, 1);
+    border: 1px;
+    outline: transparent;
+    font-size: 16px;
+}
+.math2{
+    margin-left: 5px;
+    padding-top: 1px;
+}
+.math2 input{
+    width: 24%;
+    padding: 15px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 1);
+    border: 1px;
+    outline: transparent;
+    font-size: 16px;
+}
+#z{
+    background-color: rgba(58, 58, 58, 0.5);
+    font-size: 13px;
+}
+.math3{
+    margin-left: 5px;
+    padding-top: 1px;
+}
+.math3 input{
+    width: 24%;
+    padding: 15px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 1);
+    border: 1px;
+    outline: transparent;
+    font-size: 16px;
+}
+#mi{
+    background-color: rgba(58, 58, 58, 0.5);
+}
+.math4{
+    margin-left: 5px;
+    padding-top: 1px;
+}
+.math4 input{
+    width: 24%;
+    padding: 15px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 1);
+    border: 1px;
+    outline: transparent;
+    font-size: 16px;
+}
+#pl{
+    background-color: rgba(58, 58, 58, 0.5);
+}
+.math5{
+    margin-left: 5px;
+    padding-top: 1px;
+}
+.math5 input{
+    width: 24%;
+    padding: 15px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 1);
+    border: 1px;
+    outline: transparent;
+    font-size: 16px;
+}
+#re{
+    background-color: rgba(61, 93, 153, 0.5);
+}

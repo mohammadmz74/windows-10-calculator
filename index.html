@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Calculate/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contain">
+        <form class="calculate">
+            <div class="display">
+                <input type="text" id="display" placeholder="0">
+            </div>
+            <div class="math">
+                <input type="button" name="fl" value="fl" onclick="mathCalculate('floor')">
+                <input type="button" name="ce" value="ce" onclick="mathCalculate('ceil')">
+                <input type="button" name="c" value="c" onclick="reset()">
+                <input type="button" name="delete" value="&#9003;" id="del">
+            </div>
+            <div class="math1">
+                <input type="button" name="round" value="r" onclick="mathCalculate('round')">
+                <input type="button" name="power" value="^" onclick="mathCalculate('pow')">
+                <input type="button" name="sqrt" value="&radic;" onclick="mathCalculate('sqrt')">
+                <input type="button" name="division" value="/" onclick="addToCalculat(division.value)">
+            </div>
+            <div class="math2">
+                <input type="button" name="s" value="7" onclick="addToCalculat(s.value)">
+                <input type="button" name="e" value="8" onclick="addToCalculat(e.value)">
+                <input type="button" name="n" value="9" onclick="addToCalculat(n.value)">
+                <input type="button" name="z" value="*" id="z" onclick="addToCalculat(z.value)">
+            </div>
+            <div class="math3">
+                <input type="button" name="f" value="4" onclick="addToCalculat(f.value)">
+                <input type="button" name="fi" value="5" onclick="addToCalculat(fi.value)">
+                <input type="button" name="si" value="6" onclick="addToCalculat(si.value)">
+                <input type="button" name="mi" value="-" id="mi" onclick="addToCalculat(mi.value)">
+            </div>
+            <div class="math4">
+                <input type="button" name="o" value="1" onclick="addToCalculat(o.value)">
+                <input type="button" name="t" value="2" onclick="addToCalculat(t.value)">
+                <input type="button" name="th" value="3" onclick="addToCalculat(th.value)">
+                <input type="button" name="pl" value="+" id="pl" onclick="addToCalculat(pl.value)">
+            </div>
+            <div class="math5">
+                <input type="button" name="abs" value="|X|" onclick="mathCalculate('abs')">
+                <input type="button" name="ze" value="0" onclick="addToCalculat(ze.value)">
+                <input type="button" name="d" value="." onclick="addToCalculat(d.value)">
+                <input type="button" name="result" value="=" id="re" onclick="finilize()">
+            </div>
+        </form>
+    </div>
+    <script>
+        var power = false
+        function addToCalculat(value) {
+            document.getElementById('display').value += value
+            if (power) {
+                power = false
+                var numbers = document.getElementById('display').value.split('^')
+                document.getElementById('display').value = Math.pow(numbers[0], numbers[1])
+            }
+        }
+        function finilize() {
+            document.getElementById('display').value = eval(document.getElementById('display').value)
+        }
+        function reset() {
+            document.getElementById('display').value == ''
+        }
+        function mathCalculate(mathFunc) {
+            if (mathFunc == 'pow') {
+                power = true;
+                document.getElementById('display').value += '^'
+            }else {
+                var val = document.getElementById('display').value
+                document.getElementById('display').value = Math[mathFunc](val)
+            }
+        }
+    </script>
+</body>
+</html>
